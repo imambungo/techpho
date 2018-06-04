@@ -4,6 +4,55 @@ body {
   overflow: hidden;
 }
 
+.transparan{
+  opacity: 0;
+}
+
+.depan{
+  z-index: 200;
+}
+
+
+.containermenu{
+  position: fixed;
+  top: 1%;
+  left: 3%;
+  width: 23%;
+  font-family: 'Caveat Brush', cursive;
+}
+
+a.menu{
+  position: relative;
+  display: block;
+  margin-top: 1%;
+  /*text-align: center;*/
+}
+
+a.menu:hover{
+  width: 110%;
+  left: -5%;
+}
+
+a.menu:hover span{
+  left: 16%;
+  color: green;
+  -webkit-box-shadow: inset 0 0 0 0;
+  -moz-box-shadow: inset 0 0 0 0;
+  -o-box-shadow: inset 0 0 0 0;
+  -ms-box-shadow: inset 0 0 0 0;
+  box-shadow: inset 0 0 0 0;
+}
+
+.menu span{
+  /*text-decoration: none;*/
+  display: block;
+  color: orange;
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  font-size: 70px;
+}
+
 .footer{
   width: 100%;
   position: fixed;
