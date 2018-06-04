@@ -15,10 +15,14 @@ body {
 
 .containermenu{
   position: fixed;
-  top: 1%;
-  left: 3%;
+  top: 20%;
+  left: 18%;
   width: 23%;
   font-family: 'Caveat Brush', cursive;
+}
+
+.kanan{
+  left: 60%;
 }
 
 a.menu{
