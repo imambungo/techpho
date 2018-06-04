@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TECHPHORIA 2018</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/favicon/logo.ico" type="image/x-icon">
+
+	<!-- modal tilt -->
+	<script>
+		function setDefault(a){
+			document.getElementById(a).style.boxShadow = "inset 0 0 0 2px #424446";
+			document.getElementById(a).style.color = "#222426";
+		}
+		window.onload = setTimeout(function () {
+			setDefault("twitter");
+			setDefault("instagram");
+			setDefault("facebook");
+			setDefault("line");
+		}, 4000);
+		function setHover(id, warna){
+			document.getElementById(id).style.boxShadow = "inset 0 0 0 30px #424446";
+			document.getElementById(id).style.color = warna;
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="container2">
+			<img src="images/preloader/hmmmm2.png" class="arabesque ">
+			<img src="images/preloader/biru.png" class="arabesque second">
+			<img class="arabesque third" src="images/preloader/batik2.png">
+			<img class="arabesque empat" src="images/preloader/ring putus2.png">
+		</div>
+	</div>
+
+	<div class="container2" style="z-index: 200;">
+		<img src="images/preloader/hmmmm2.png" class="arabesque ">
+		<img src="images/preloader/biru.png" class="arabesque second">
+		<img class="arabesque third" src="images/preloader/batik2.png">
+		<img class="arabesque empat" src="images/preloader/ring putus2.png">
+	</div>
+
+	<div class="footerleft">
+		<section>
+		  <ul class="social">
+		    <li>
+		      	<a onmouseover='setHover("twitter","#1DA1F2")' onmouseleave='setDefault("twitter");' id="twitter" class="ease-all" target="_blank" href="https://twitter.com/techphoria18"><i class="fab fa-twitter"></i><span class="hide-text">Twitter</span></a>
+		    </li>
+		    <li>
+		      	<a onmouseover='setHover("instagram","#F01475")' onmouseleave='setDefault("instagram");' id="instagram" class="ease-all" target="_blank" href="https://www.instagram.com/technology.euphoria"><i class="fab fa-instagram"></i><span class="hide-text">Instagram</span></a>
+		    </li>
+		    <li>
+		      	<a onmouseover='setHover("facebook","#4267B2")' onmouseleave='setDefault("facebook");' id="facebook" class="ease-all" target="_blank" href="https://www.facebook.com/techphoria.unsri"><i class="fab fa-facebook"></i><span class="hide-text">Facebook</span></a>
+		    </li>
+		    <li>
+		      	<a onmouseover='setHover("line","#00B900")' onmouseleave='setDefault("line");' id="line" class="ease-all" target="_blank" href="http://line.me/ti/p/%40oob5672z"><i class="fab fa-line"></i><span class="hide-text">Line</span></a>
+		    </li>
+		  </ul>
+		</section>
+	</div>
+	
+	<div class="footer">
+		<a class="sponsor" href="https://idcloudhost.com/" target="_blank">
+			Hosted by
+			<img class="idcloudhost" src="images/sponsor/idcloudhost.png" alt="ID CloudHost">
+		</a>
+	</div>
+	<div id="container" class="container">
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="0.00"><img src="images/backG.png"></li>
+			<li class="layer" data-depth="0.09"><img src="images/awan.png"></li>
+			<li class="layer" data-depth="0.12"><img src="images/roket.png"></li>
+			<li class="layer" data-depth="0.42"><img src="images/burung.png"></li>
+			<li class="layer" data-depth="0.50"><img src="images/amperpanjang.png"></li>
+			<li class="layer" data-depth="0.62"><img src="images/comingSoon.png"></li>
+			<li class="layer" data-depth="0.70"><img src="images/kapal.png"></li>
+			<li class="layer" data-depth="0.80"><img src="images/banyu.png"></li>
+			<li class="layer" data-depth="0.80"><img src="images/banyu.png"></li>
+		</ul>
+	</div>
+	<script src="parallax.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+
+	<!-- jQuery Plugin -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+	<!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(window).on('load', function () { // makes sure the whole site is loaded 
+			$('#status').fadeOut(); // will first fade out the loading animation 
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			$('body').delay(350).css({
+				'overflow': 'hidden'
+			});
+		})
+		//]]>
+	</script>
+</body>
+</html>
