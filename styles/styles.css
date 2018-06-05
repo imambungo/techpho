@@ -14,9 +14,9 @@ body {
   background: #FAF7D4;
   margin: 0;
   overflow: hidden;
-  -webkit-transition: background-color 4000ms linear;
-  -ms-transition: background-color 4000ms linear;
-  transition: background-color 4000ms linear;
+  -webkit-transition: background-color 7000ms linear;
+  -ms-transition: background-color 7000ms linear;
+  transition: background-color 7000ms linear;
 }
 
 .transparan{

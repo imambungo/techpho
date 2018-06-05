@@ -133,17 +133,17 @@
 	<!-- blackHole -->
 	<script>
 		function blackHole() {
-		  	document.getElementById("logo").style.width = "30%";
-		  	document.getElementById("blackHole").style.width = "1%";
-		  	document.getElementById("blackHole2").style.width = "1%";
-		  	document.getElementById("image1").style.width = "1%";
-		  	document.getElementById("awan").style.width = "1%";
-		  	document.getElementById("roket").style.width = "1%";
-		  	document.getElementById("burung").style.width = "1%";
-		  	document.getElementById("ampera").style.width = "1%";
-		  	document.getElementById("kapal").style.width = "1%";
-		  	document.getElementById("image7").style.width = "1%";
-		  	document.getElementById("image8").style.width = "1%";
+		  	document.getElementById("logo").style.width = "5%";
+		  	document.getElementById("blackHole").style.width = "0";
+		  	document.getElementById("blackHole2").style.width = "0";
+		  	document.getElementById("image1").style.width = "0";
+		  	document.getElementById("awan").style.width = "0";
+		  	document.getElementById("roket").style.width = "0";
+		  	document.getElementById("burung").style.width = "0";
+		  	document.getElementById("ampera").style.width = "0";
+		  	document.getElementById("kapal").style.width = "0";
+		  	document.getElementById("image7").style.width = "0";
+		  	document.getElementById("image8").style.width = "0";
 		  	document.getElementById("blackHole").style.top = "50%";
 		  	document.getElementById("blackHole2").style.top = "50%";
 		  	document.getElementById("image1").style.top = "50%";
@@ -164,21 +164,27 @@
 		  	document.getElementById("kapal").style.left = "50%";
 		  	document.getElementById("image7").style.left = "50%";
 		  	document.getElementById("image8").style.left = "50%";
-		  	document.getElementById("blackHole").style.maxHeight = "1%";
-		  	document.getElementById("blackHole2").style.maxHeight = "1%";
-		  	document.getElementById("image1").style.maxHeight = "1%";
-		  	document.getElementById("awan").style.maxHeight = "1%";
-		  	document.getElementById("roket").style.maxHeight = "1%";
-		  	document.getElementById("burung").style.maxHeight = "1%";
-		  	document.getElementById("ampera").style.maxHeight = "1%";
-		  	document.getElementById("kapal").style.maxHeight = "1%";
-		  	document.getElementById("image7").style.maxHeight = "1%";
-		  	document.getElementById("image8").style.maxHeight = "1%";
-		  	document.getElementById("blackHole").style.fontSize = "3vw";
-		  	document.getElementById("blackHole2").style.fontSize = "3vw";
-		  	document.getElementById("shinratensei").play();
-		  	setTimeout(function() { document.getElementById("boom").play(); }, 3000);
+		  	document.getElementById("blackHole").style.maxHeight = "0";
+		  	document.getElementById("blackHole2").style.maxHeight = "0";
+		  	document.getElementById("image1").style.maxHeight = "0";
+		  	document.getElementById("awan").style.maxHeight = "0";
+		  	document.getElementById("roket").style.maxHeight = "0";
+		  	document.getElementById("burung").style.maxHeight = "0";
+		  	document.getElementById("ampera").style.maxHeight = "0";
+		  	document.getElementById("kapal").style.maxHeight = "0";
+		  	document.getElementById("image7").style.maxHeight = "0";
+		  	document.getElementById("image8").style.maxHeight = "0";
+		  	document.getElementById("blackHole").style.fontSize = "0";
+		  	document.getElementById("blackHole2").style.fontSize = "0";
+		  	// document.getElementById("shinratensei").play();
+		  	setTimeout(function() { document.getElementById("boom").play(); }, 4000);
+		  	setTimeout(function() { document.getElementById("shinratensei").play(); }, 100);
 		  	document.body.style.backgroundColor = "black";
+
+		  	setTimeout(function() {
+		  		document.getElementById("logo").innerHTML = '<img style="width:40vw; transform: translate(-45%, 1%);" src="images/bang.webp" alt="ledakan kosmik">'; 
+		  	}, 4000);
+
 		}
 	</script>
 </body>
