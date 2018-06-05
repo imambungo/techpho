@@ -33,6 +33,9 @@
 	
 </head>
 <body>
+	<audio id="shinratensei" src="audio/shinratensei.mp3"></audio>
+	<audio id="boom" src="audio/boom.mp3"></audio>
+
 	<!-- Preloader -->
 	<div id="preloader">
 		<!-- white page -->
@@ -95,7 +98,7 @@
 	</div>
 	<div id="container" class="container">
 		<ul id="scene" class="scene">
-			<li class="layer" data-depth="0.00"><img id="image1" src="images/backG.png"></li>
+			<li class="layer transparan" data-depth="0.00"><img id="image1" src="images/backG.png"></li>
 			<li class="layer" data-depth="0.09"><img id="awan" src="images/awan.png"></li>
 			<li class="layer" data-depth="0.12"><img id="roket" src="images/roket.png"></li>
 			<li class="layer" data-depth="0.42"><img id="burung" src="images/burung.png"></li>
@@ -173,6 +176,9 @@
 		  	document.getElementById("image8").style.maxHeight = "1%";
 		  	document.getElementById("blackHole").style.fontSize = "3vw";
 		  	document.getElementById("blackHole2").style.fontSize = "3vw";
+		  	document.getElementById("shinratensei").play();
+		  	setTimeout(function() { document.getElementById("boom").play(); }, 3000);
+		  	document.body.style.backgroundColor = "black";
 		}
 	</script>
 </body>
