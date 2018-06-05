@@ -50,22 +50,22 @@
 	</div>
 
 	<div id="blackHole" class="containermenu depan">
-		<a href="#" class="menu" onclick="blackHole()">
+		<a href="#" class="menu" onclick="menu1()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo" onclick="blackHole()">
+		<a href="#" class="menu duo" onclick="menu1()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
 	</div>
 
 	<div id="blackHole2" class="containermenu kanan depan">
-		<a href="#" class="menu" onclick="blackHole()">
+		<a href="#" class="menu" onclick="menu1()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo" onclick="blackHole()">
+		<a href="#" class="menu duo" onclick="menu1()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
@@ -177,14 +177,20 @@
 		  	document.getElementById("blackHole").style.fontSize = "0";
 		  	document.getElementById("blackHole2").style.fontSize = "0";
 		  	// document.getElementById("shinratensei").play();
-		  	setTimeout(function() { document.getElementById("boom").play(); }, 4000);
-		  	setTimeout(function() { document.getElementById("shinratensei").play(); }, 100);
+		  	setTimeout(function() { document.getElementById("boom").play(); }, 5000);
+		  	setTimeout(function() { document.getElementById("shinratensei").play(); }, 50);
 		  	document.body.style.backgroundColor = "black";
 
 		  	setTimeout(function() {
 		  		document.getElementById("logo").innerHTML = '<img style="width:40vw; transform: translate(-45%, 1%);" src="images/bang.webp" alt="ledakan kosmik">'; 
 		  	}, 4000);
 
+		  	setTimeout(function() { document.getElementById("logo").innerHTML = '';  }, 8110);
+		}
+
+		function menu1() {
+			setTimeout(function() { window.location.href = 'http://techphoria.web.id/testing/'; }, 8100);
+			blackHole();
 		}
 	</script>
 </body>
