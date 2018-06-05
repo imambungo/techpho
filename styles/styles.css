@@ -1,8 +1,9 @@
 *{
-  -webkit-transition:width 3000ms ease-in, left 3000ms ease-in, top 3000ms ease-in, height 3000ms ease-in;
-  -moz-transition:width 3000ms ease-in, left 3000ms ease-in, top 3000ms ease-in, height 3000ms ease-in;
-  -o-transition:width 3000ms ease-in, left 3000ms ease-in, top 3000ms ease-in, height 3000ms ease-in;
-  transition:width 3000ms ease-in, left 3000ms ease-in, top 3000ms ease-in, height 3000ms ease-in;
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in;
+  -moz-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in;
+  -o-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in;
+  transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in;
   /*transition: left .5s cubic-bezier(.42,-0.3,.78,1.25), top .5s cubic-bezier(.42,-0.3,.78,1.25);*/
   /*transition: left 3000ms ease-in, top 3000ms ease-in;*/
 }
