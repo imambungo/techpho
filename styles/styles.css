@@ -43,6 +43,11 @@ a.menu{
   display: block;
   margin-top: 1%;
   /*text-align: center;*/
+  
+}
+
+#blackHole, #blackHole2{
+  font-size: 6vw;
 }
 
 a.menu:hover{
@@ -67,7 +72,6 @@ a.menu:hover span{
   position: absolute;
   top: 26%;
   left: 5%;
-  font-size: 6vw;
 }
 
 .footer{
