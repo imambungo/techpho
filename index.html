@@ -42,37 +42,38 @@
 			<img class="arabesque empat" src="images/preloader/ring putus2.png">
 		</div>
 	</div>
+	<!-- end of preloader -->
 
-	<div class="container2 depan" >
+	<div id="logo" class="container2 depan" >
 		<img src="images/preloader/hmmmm2.png" class="arabesque ">
 		<img src="images/preloader/biru.png" class="arabesque second">
 		<img class="arabesque third" src="images/preloader/batik2.png">
 		<img class="arabesque empat" src="images/preloader/ring putus2.png">
 	</div>
 
-	<div class="containermenu depan">
-		<a href="#" class="menu">
+	<div id="blackHole" class="containermenu depan">
+		<a href="#" class="menu" onclick="blackHole()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo">
+		<a href="#" class="menu duo" onclick="blackHole()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
 	</div>
 
-	<div class="containermenu kanan depan">
-		<a href="#" class="menu">
+	<div id="blackHole2" class="containermenu kanan depan">
+		<a href="#" class="menu" onclick="blackHole()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo">
+		<a href="#" class="menu duo" onclick="blackHole()">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
 	</div>
 
-	<div class="footerleft">
+	<div id="blackHole3" class="footerleft">
 		<section>
 		  <ul class="social">
 		    <li>
@@ -91,7 +92,7 @@
 		</section>
 	</div>
 	
-	<div class="footer">
+	<div id="blackHole4" class="footer">
 		<a class="sponsor" href="https://idcloudhost.com/" target="_blank">
 			Hosted by
 			<img class="idcloudhost" src="images/sponsor/idcloudhost.png" alt="ID CloudHost">
@@ -99,15 +100,15 @@
 	</div>
 	<div id="container" class="container">
 		<ul id="scene" class="scene">
-			<li class="layer" data-depth="0.00"><img src="images/backG.png"></li>
-			<li class="layer" data-depth="0.09"><img src="images/awan.png"></li>
-			<li class="layer" data-depth="0.12"><img src="images/roket.png"></li>
-			<li class="layer" data-depth="0.42"><img src="images/burung.png"></li>
-			<li class="layer transparan" data-depth="0.50"><img src="images/amperpanjang.png"></li>
+			<li class="layer" data-depth="0.00"><img id="image1" src="images/backG.png"></li>
+			<li class="layer" data-depth="0.09"><img id="awan" src="images/awan.png"></li>
+			<li class="layer" data-depth="0.12"><img id="roket" src="images/roket.png"></li>
+			<li class="layer" data-depth="0.42"><img id="burung" src="images/burung.png"></li>
+			<li class="layer" data-depth="0.50"><img id="ampera" src="images/amperpanjang.png"></li>
 			<li class="layer transparan" data-depth="0.62"><img src="images/comingSoon.png"></li>
-			<li class="layer" data-depth="0.70"><img src="images/kapal.png"></li>
-			<li class="layer" data-depth="0.80"><img src="images/banyu.png"></li>
-			<li class="layer" data-depth="0.80"><img src="images/banyu.png"></li>
+			<li class="layer" data-depth="0.70"><img id="kapal" src="images/kapal.png"></li>
+			<li class="layer" data-depth="0.80"><img id="image7" src="images/banyu.png"></li>
+			<li class="layer" data-depth="0.80"><img id="image8" src="images/banyu.png"></li>
 		</ul>
 	</div>
 	<script src="parallax.js"></script>
@@ -130,6 +131,74 @@
 			});
 		})
 		//]]>
+	</script>
+
+	<!-- blackHole -->
+	<script>
+		function blackHole() {
+		  	document.getElementById("logo").style.width = "30%";
+		  	document.getElementById("blackHole").style.width = "10%";
+		  	document.getElementById("blackHole2").style.width = "10%";
+		  	document.getElementById("blackHole3").style.width = "10%";
+		  	document.getElementById("blackHole4").style.width = "10%";
+		  	document.getElementById("image1").style.width = "10%";
+		  	document.getElementById("awan").style.width = "10%";
+		  	document.getElementById("roket").style.width = "10%";
+		  	document.getElementById("burung").style.width = "10%";
+		  	document.getElementById("ampera").style.width = "10%";
+		  	document.getElementById("kapal").style.width = "10%";
+		  	document.getElementById("image7").style.width = "10%";
+		  	document.getElementById("image8").style.width = "10%";
+		  	document.getElementById("blackHole").style.top = "50%";
+		  	document.getElementById("blackHole2").style.top = "50%";
+		  	document.getElementById("blackHole3").style.top = "50%";
+		  	document.getElementById("blackHole4").style.top = "50%";
+		  	document.getElementById("image1").style.top = "50%";
+		  	document.getElementById("awan").style.top = "50%";
+		  	document.getElementById("roket").style.top = "50%";
+		  	document.getElementById("burung").style.top = "50%";
+		  	document.getElementById("ampera").style.top = "50%";
+		  	document.getElementById("kapal").style.top = "50%";
+		  	document.getElementById("image7").style.top = "50%";
+		  	document.getElementById("image8").style.top = "50%";
+		  	document.getElementById("blackHole").style.left = "50%";
+		  	document.getElementById("blackHole2").style.left = "50%";
+		  	document.getElementById("blackHole3").style.left = "50%";
+		  	document.getElementById("blackHole4").style.left = "50%";
+		  	document.getElementById("image1").style.left = "50%";
+		  	document.getElementById("awan").style.left = "50%";
+		  	document.getElementById("roket").style.left = "50%";
+		  	document.getElementById("burung").style.left = "50%";
+		  	document.getElementById("ampera").style.left = "50%";
+		  	document.getElementById("kapal").style.left = "50%";
+		  	document.getElementById("image7").style.left = "50%";
+		  	document.getElementById("image8").style.left = "50%";
+		  	// document.getElementById("blackHole").style.height = "10%";
+		  	// document.getElementById("blackHole2").style.height = "10%";
+		  	// document.getElementById("blackHole3").style.height = "10%";
+		  	// document.getElementById("blackHole4").style.height = "10%";
+		  	// document.getElementById("image1").style.height = "10%";
+		  	// document.getElementById("awan").style.height = "10%";
+		  	// document.getElementById("roket").style.height = "10%";
+		  	// document.getElementById("burung").style.height = "10%";
+		  	// document.getElementById("ampera").style.height = "10%";
+		  	// document.getElementById("kapal").style.height = "10%";
+		  	// document.getElementById("image7").style.height = "10%";
+		  	// document.getElementById("image8").style.height = "10%";
+		  	// document.getElementById("blackHole").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("blackHole2").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("blackHole3").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("blackHole4").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("image1").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("awan").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("roket").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("burung").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("ampera").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("kapal").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("image7").style.transform = "translate(-50%, -50%)";
+		  	// document.getElementById("image8").style.transform = "translate(-50%, -50%)";
+
+		}
 	</script>
 </body>
 </html>
