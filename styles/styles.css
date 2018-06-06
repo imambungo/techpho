@@ -1185,3 +1185,11 @@ section{
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
+
+.icons{
+  max-height: 5000px;
+  -webkit-transition:width 5000ms ease-in-out, max-height 2000ms ease-in-out;
+  -moz-transition:width 5000ms ease-in-out, max-height 2000ms ease-in-out;
+  -o-transition:width 5000ms ease-in-out, max-height 2000ms ease-in-out;
+  transition:width 5000ms ease-in-out, max-height 2000ms ease-in-out;
+}
