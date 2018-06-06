@@ -14,11 +14,28 @@
   transition:width 4000ms ease-in-out, top 4000ms ease-in-out, left 4000ms ease-in-out, max-height 4000ms ease-in-out;
 }
 
-.judul{
-  position: fixed;
-  width: 40vw;
-  transform: translate(-50%,5vh);
-  left: 57%;
+#roket{
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in-out, top 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -moz-transition:width 3000ms ease-in-out, top 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -o-transition:width 3000ms ease-in-out, top 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  transition:width 3000ms ease-in-out, top 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+}
+
+#footer{
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -moz-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
+}
+
+#footerleft{
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -moz-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
+  transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
 }
 
 .menu img{
@@ -32,6 +49,15 @@ body {
   -webkit-transition: background-color 7000ms linear;
   -ms-transition: background-color 7000ms linear;
   transition: background-color 7000ms linear;
+}
+
+.judul{
+  position: absolute;
+  width: 40vw;
+  transform: translate(-50%,0);
+  top: 2vw;
+  left: 50%;
+  z-index: 70;
 }
 
 .transparan{
@@ -113,6 +139,7 @@ a.menu:hover span{
 
 .footerleft{
   position: fixed;
+  width: inherit;
   bottom: 2px;
   left: 2px;
   z-index: 98;
