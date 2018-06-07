@@ -914,7 +914,7 @@ img {
   -ms-animation-name: spin;
   -ms-animation-duration: 5000ms;
   fill: #a97c50;
-  width: 37%;
+  width: 34%;
 }
 
 .empat {
@@ -935,6 +935,21 @@ img {
   -ms-animation-duration: 3000ms;
   width: 100%;
   fill: #d39b67;
+}
+
+.sharingan {
+  -webkit-animation-name: spin3;
+  -webkit-animation-duration: 3000ms;
+  -moz-animation-name: spin3;
+  -moz-animation-duration: 3000ms;
+  -ms-animation-name: spin3;
+  -ms-animation-duration: 3000ms;
+  fill: #a97c50;
+  width: 77%;
+  opacity: 0;
+  -webkit-transition: opacity 2500ms ease-out;
+  -ms-transition: opacity 2500ms ease-out;
+  transition: opacity 2500ms ease-out;
 }
 
 keyframes spin {

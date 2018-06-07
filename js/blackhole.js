@@ -67,6 +67,8 @@ function blackHole() {
 		  	// document.getElementById("judul").src = '';
 		  	// document.getElementById("kapal").src = '';
 		  	document.getElementById("shinratensei").play();
+		  	setTimeout(function() { document.getElementById("sharingan").style.opacity = "0.55"; }, 500);
+		  	setTimeout(function() { document.getElementById("sharingan").style.zIndex = "1000"; }, 500);
 		  	setTimeout(function() { document.getElementById("boom").play(); }, 5000);
 		  	document.body.style.backgroundColor = "black";
 
