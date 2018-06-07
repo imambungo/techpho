@@ -25,6 +25,8 @@ function blackHole() {
 		  	document.getElementById("image7").style.top = "130%";
 		  	document.getElementById("image8").style.top = "130%";
 		  	document.getElementById("judul").style.top = "50%";
+		  	document.getElementById("duo").style.top = "0";
+		  	document.getElementById("duos").style.top = "0";
 		  	document.getElementById("footer").style.bottom = "50%";
 		  	document.getElementById("footerleft").style.bottom = "50%";
 		  	document.getElementById("blackHole").style.left = "50%";
@@ -80,3 +82,8 @@ function blackHole() {
 		  	setTimeout(function() { document.getElementById("logo").innerHTML = '';  }, 8110);
 		  	setTimeout(function() { location.reload(); }, 8111);
 		}
+
+function shinraTensei() {
+	document.getElementById("voiceshinratensei").play();
+	setTimeout(function() { blackHole(); }, 2100);
+}
