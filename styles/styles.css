@@ -1250,7 +1250,7 @@ section{
 @media screen and (orientation: portrait) {
   .judul {
     width: 55vw;
-    top: 45%;
+    top: 40%;
   }
   .containermenu {
     top: 5%;
@@ -1275,7 +1275,7 @@ section{
     width: 20vw;
     height: 20vw;
     position: fixed;
-    top: 38%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 250;
